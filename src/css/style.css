@@ -1,5 +1,7 @@
 :root {
-  --main-color: #68b738;
+  --green: #68b738;
+  --blue: #a0bfff;
+  --reddish: #eb9694;
   --purple: #6e588c; /*2c2340 темнее; 1a1226 super dark; 5c4268 light*/
   --red: #cc0000;
   --bg-light-grey: #e5e8ec;
@@ -43,6 +45,10 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 0;
+}
+
+p {
   margin: 0;
 }
 
@@ -101,13 +107,20 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 } */
 .page-header {
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   width: 100%;
   color: white;
   background-position: center;
   background-size: cover;
-  background-image: url("../img/header-bg.jpg");
+  background-color: #000;
   background-repeat: no-repeat;
+  background-image: url("../img/global/header-bg-mobile@1x.jpg");
+}
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-header {
+    background-image: url("../img/global/header-bg-mobile@2x.jpg");
+  }
 }
 
 .nav-list {
@@ -152,6 +165,55 @@ input[type="radio"].visually-hidden {
   font-size: 40px;
 }
 
+.arrow,
+.arrow:before {
+  position: absolute;
+  left: 50%;
+}
+
+.arrow {
+  width: 80px;
+  height: 80px;
+  top: 80%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+  cursor: pointer;
+  left: calc(50% - 20px);
+}
+
+.arrow:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: .8s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+
+.arrow:hover:before {
+  animation-name: none;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
+}
+
 h2 {
   font-size: 50px;
   text-align: center;
@@ -159,6 +221,7 @@ h2 {
 .about {
   background-color: var(--bg-light-grey);
   padding-top: 40px;
+  padding-bottom: 20px;
 }
 .about__wrapper {
   display: flex;
@@ -204,6 +267,20 @@ figcaption {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+.portfolio__item--superbrain {
+  border-bottom: 5px solid var(--blue);
+}
+
+.portfolio__item--cat-energy {
+  border-bottom: 5px solid var(--green);
+}
+.portfolio__item--visualization {
+  border-bottom: 5px solid var(--reddish);
 }
 
 .portfolio__item-image-wrapper {
@@ -211,7 +288,7 @@ figcaption {
 }
 
 .portfolio__item-description-wrapper {
-  width: 328px;
+  width: 327px;
 }
 
 /* contact */
@@ -234,8 +311,9 @@ textarea {
   padding: 20px;
   font-size: 22px;
   width: 280px;
-  color: var(--main-color);
+  color: var(--green);
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 label {
@@ -248,7 +326,7 @@ input:focus,
 textarea:focus {
   outline: none;
   border: none;
-  border-bottom: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--green);
 }
 
 .contact button {
@@ -263,7 +341,7 @@ textarea:focus {
 
 .contact button:hover,
 .contact button:focus {
-  border: 1px solid var(--main-color);
+  border: 1px solid var(--green);
   outline: none;
 }
 
@@ -276,6 +354,16 @@ textarea:focus {
 }
 
 @media (min-width: 768px) {
+  .page-header {
+    background-image: url("../img/global/header-bg-tablet@1x.jpg");
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url("../img/global/header-bg-tablet@2x.jpg");
+    }
+  }
+
   .container {
     width: 768px;
     padding-left: 30px;
@@ -329,6 +417,16 @@ textarea:focus {
 }
 
 @media (min-width: 1300px) {
+  .page-header {
+    background-image: url("../img/global/header-bg-desktop@1x.jpg");
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url("../img/global/header-bg-desktop@2x.jpg");
+    }
+  }
+
   .container {
     width: 1300px;
     padding-left: 40px;
@@ -349,5 +447,6 @@ textarea:focus {
 
   .portfolio__item-image-wrapper img {
     margin-right: 80px;
+    width: 700px;
   }
 }

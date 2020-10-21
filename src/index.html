@@ -16,13 +16,25 @@
         <nav class="main-nav">
           <ul class="nav-list">
             <li class="nav-list__item">
-              <a class="nav-list__item-link" href="#">About me</a>
+              <a
+                class="nav-list__item-link nav-list__item-link--about-me"
+                href="#"
+                >About me</a
+              >
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__item-link" href="#">Portfolio</a>
+              <a
+                class="nav-list__item-link nav-list__item-link--portfolio"
+                href="#"
+                >Portfolio</a
+              >
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__item-link" href="#">Contact</a>
+              <a
+                class="nav-list__item-link nav-list__item-link--contact"
+                href="#"
+                >Contact</a
+              >
             </li>
           </ul>
         </nav>
@@ -34,6 +46,7 @@
           </div>
         </div>
       </div>
+      <div class="arrow nav-list__item-link--about-me"></div>
     </header>
 
     <section class="about">
@@ -53,12 +66,23 @@
           </div>
         </div>
         <figure class="about__photo">
-          <img
-            class="about__photo-img"
-            src="img/not-me.jpg"
-            alt="Not my photo"
-            width="320"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                img/global/not-me@1x.webp 1x,
+                img/global/not-me@2x.webp 2x
+              "
+            />
+
+            <img
+              class="about__photo-img"
+              src="img/global/not-me.jpg@1x.jpg"
+              srcset="img/global/not-me.jpg@2x.jpg 2x"
+              alt="Not my photo"
+            />
+          </picture>
+
           <figcaption>Photo by JC Gellidon on Unsplash</figcaption>
         </figure>
       </div>
@@ -67,21 +91,45 @@
     <section class="portfolio">
       <h2>Portfolio</h2>
       <div class="portfolio__wrapper container">
-        <article class="portfolio__item">
+        <article class="portfolio__item portfolio__item--superbrain">
           <div class="portfolio__item-image-wrapper">
-            <!-- <picture>
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
-    
-              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-              <img class="pick-program__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Cat energy pro chicken">
-              <img src="#" alt="Superbrain app" />
-            </picture> -->
-            <picture>    
-              <source media="(min-width: 768px)" srcset="img/superbrain/superbrain-tablet.png">
-              <img src="img/superbrain/superbrain-mobile.png" width="280" alt="Superbrain app">
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1300px)"
+                srcset="
+                  img/superbrain/desktop@1x.webp 1x,
+                  img/superbrain/desktop@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/superbrain/tablet@1x.webp 1x,
+                  img/superbrain/tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/superbrain/mobile@1x.webp 1x,
+                  img/superbrain/mobile@2x.webp 2x
+                "
+              />
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/superbrain/tablet@1x.png 1x,
+                  img/superbrain/tablet@2x.png 2x
+                "
+              />
+              <img
+                src="img/superbrain/mobile@1x.png"
+                srcset="img/superbrain/mobile@2x.png 2x"
+                alt="Superbrain app"
+              />
             </picture>
           </div>
           <div class="portfolio__item-description-wrapper">
@@ -96,12 +144,57 @@
             </div>
           </div>
         </article>
-        <article class="portfolio__item">
+        <article class="portfolio__item portfolio__item--cat-energy">
           <div class="portfolio__item-image-wrapper">
-            <img src="#" alt="Cat energy website" />
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1300px)"
+                srcset="
+                  img/cat-energy/desktop@1x.webp 1x,
+                  img/cat-energy/desktop@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/cat-energy/tablet@1x.webp 1x,
+                  img/cat-energy/tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/cat-energy/mobile@1x.webp 1x,
+                  img/cat-energy/mobile@2x.webp 2x
+                "
+              />
+
+              <source
+                media="(min-width: 1300px)"
+                srcset="
+                  img/cat-energy/desktop@1x.png 1x,
+                  img/cat-energy/desktop@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/cat-energy/tablet@1x.png 1x,
+                  img/cat-energy/tablet@2x.png 2x
+                "
+              />
+              <img
+                src="img/cat-energy/mobile@1x.png"
+                srcset="img/cat-energy/mobile@2x.png 2x"
+                alt="Cat energy website"
+              />
+            </picture>
           </div>
           <div class="portfolio__item-description-wrapper">
             <p class="portfolio__item-description">
+              СДЕЛАТЬ 2Х ВСЕ ФОТКИ СДЕЛАТЬ ФОТКИ ВЕБПИ. ДАЛЬШЕ ДЕЛАТЬ ДИЗАЙН
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
               doloribus rem quibusdam ad, quidem ab est consequuntur assumenda
               perferendis ipsum?
@@ -112,9 +205,53 @@
             </div>
           </div>
         </article>
-        <article class="portfolio__item">
+        <article class="portfolio__item portfolio__item--visualization">
           <div class="portfolio__item-image-wrapper">
-            <img src="#" alt="Data visualization app" />
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1300px)"
+                srcset="
+                  img/data-visualization/desktop@1x.webp 1x,
+                  img/data-visualization/desktop@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/data-visualization/tablet@1x.webp 1x,
+                  img/data-visualization/tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/data-visualization/mobile@1x.webp 1x,
+                  img/data-visualization/mobile@2x.webp 2x
+                "
+              />
+
+              <source
+                media="(min-width: 1300px)"
+                srcset="
+                  img/data-visualization/desktop@1x.png 1x,
+                  img/data-visualization/desktop@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/data-visualization/tablet@1x.png 1x,
+                  img/data-visualization/tablet@2x.png 2x
+                "
+              />
+              <img
+                src="img/data-visualization/mobile@1x.png"
+                srcset="img/data-visualization/mobile@2x.png 2x"
+                alt="Data visualization app"
+              />
+            </picture>
           </div>
           <div class="portfolio__item-description-wrapper">
             <p class="portfolio__item-description">
@@ -153,15 +290,50 @@
     <footer class="page-footer container">
       <ul class="nav-list">
         <li class="nav-list__item">
-          <a class="nav-list__item-link" href="#">About me</a>
+          <a class="nav-list__item-link nav-list__item-link--about-me" href="#"
+            >About me</a
+          >
         </li>
         <li class="nav-list__item">
-          <a class="nav-list__item-link" href="#">Portfolio</a>
-        </li>
-        <li class="nav-list__item">
-          <a class="nav-list__item-link" href="#">Contact</a>
+          <a class="nav-list__item-link nav-list__item-link--portfolio" href="#"
+            >Portfolio</a
+          >
         </li>
       </ul>
     </footer>
+
+    <script>
+      "use strict";
+      const about = document.querySelector(".about");
+      const aboutMeLink = document.querySelectorAll(
+        ".nav-list__item-link--about-me"
+      );
+      for (let i = 0; i < aboutMeLink.length; i++) {
+        aboutMeLink[i].addEventListener("click", (e) => {
+          e.preventDefault();
+          about.scrollIntoView({ behavior: "smooth" });
+        });
+      }
+
+      const portfolio = document.querySelector(".portfolio");
+      const portfolioLink = document.querySelectorAll(
+        ".nav-list__item-link--portfolio"
+      );
+      for (let i = 0; i < portfolioLink.length; i++) {
+        portfolioLink[i].addEventListener("click", (e) => {
+          e.preventDefault();
+          portfolio.scrollIntoView({ behavior: "smooth" });
+        });
+      }
+
+      const contact = document.querySelector(".contact");
+      const contactLink = document.querySelector(
+        ".nav-list__item-link--contact"
+      );
+      contactLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        contact.scrollIntoView({ behavior: "smooth" });
+      });
+    </script>
   </body>
 </html>
