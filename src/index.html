@@ -39,10 +39,10 @@
           </ul>
         </nav>
         <div class="slogan__wrapper">
-          <span class="slogan">Front-end Developer</span>
+          <span class="slogan">Hello, I'm Serge,</span>
           <div class="slogan__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea illum
-            tempore, quaerat minima fugiat nam?
+            a hobbyist Front-end Developer based in Toronto who wants to work in a real world projects.
+            <!-- Front End Developer who focuses on writing clean, elegant and efficient code -->  <!--readable-->
           </div>
         </div>
       </div>
@@ -54,16 +54,33 @@
       <div class="about__wrapper container">
         <div class="about__description-wrapper">
           <p class="about__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            officiis dolore nulla vitae laudantium quidem voluptas labore. Rerum
-            cupiditate expedita ullam suscipit, quasi facilis atque eius odio
-            ipsam! Aliquam molestiae, possimus nemo perspiciatis eveniet
-            corrupti accusamus fuga ab dolorum maiores repellat quos et, in
-            exercitationem, doloremque libero nulla enim eum?
+            Hello. My name is Serge. Since 2018 I live in Toronto. I have four
+            years front end developer experience (hobby though) and I believe
+            it's time for real work. You can find certification and CV below. To
+            see code and how it works please go to
+            <a
+              class="about__portfolio-link nav-list__item-link--portfolio"
+              href="#"
+              >Portfolio</a
+            >
+            section.
           </p>
-          <div class="btn-wrapper">
-            <button class="btn" type="button">Download CV</button>
-          </div>
+          <!-- In 2018 I immigrated from Russia to Canada with my wife and now we live in Toronto.  -->
+          <ul class="documents-list">
+            <li class="documents-list__item">
+              <a class="documents-list__link" href="#">Open CV</a>
+            </li>
+            <li class="documents-list__item">
+              <a class="documents-list__link" href="/pdf/html&css-level-2.pdf"
+                >Open HTML & CSS certificate</a
+              >
+            </li>
+            <li class="documents-list__item">
+              <a class="documents-list__link" href="/pdf/js-level-1.pdf"
+                >Open JS certificate</a
+              >
+            </li>
+          </ul>
         </div>
         <figure class="about__photo">
           <picture>
@@ -82,8 +99,9 @@
               alt="Not my photo"
             />
           </picture>
-
-          <figcaption>Photo by JC Gellidon on Unsplash</figcaption>
+          <figcaption class="about__photo-description">
+            Photo by JC Gellidon on Unsplash
+          </figcaption>
         </figure>
       </div>
     </section>
@@ -92,6 +110,7 @@
       <h2>Portfolio</h2>
       <div class="portfolio__wrapper container">
         <article class="portfolio__item portfolio__item--superbrain">
+          <h3 class="visually-hidden">Superbrain app</h3>
           <div class="portfolio__item-image-wrapper">
             <picture>
               <source
@@ -126,6 +145,7 @@
                 "
               />
               <img
+                class="portfolio__item-image"
                 src="img/superbrain/mobile@1x.png"
                 srcset="img/superbrain/mobile@2x.png 2x"
                 alt="Superbrain app"
@@ -134,17 +154,24 @@
           </div>
           <div class="portfolio__item-description-wrapper">
             <p class="portfolio__item-description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-              doloribus rem quibusdam ad, quidem ab est consequuntur assumenda
-              perferendis ipsum?
+              This app consist from 4 games. I decided to combine it to one app
+              to practice making bigger app. All apps made with React and styled
+              components.
             </p>
             <div class="btn-wrapper">
-              <a class="btn" href="#">Go to website</a>
-              <a class="btn" href="#">Github</a>
+              <a class="btn" href="https://superbrain.netlify.app/"
+                >Website</a
+              >
+              <a
+                class="btn"
+                href="https://bitbucket.org/SergeiKos/superbrain/src/master/"
+                >Bitbucket</a
+              >
             </div>
           </div>
         </article>
         <article class="portfolio__item portfolio__item--cat-energy">
+          <h3 class="visually-hidden">Cat energy website</h3>
           <div class="portfolio__item-image-wrapper">
             <picture>
               <source
@@ -186,6 +213,7 @@
                 "
               />
               <img
+                class="portfolio__item-image"
                 src="img/cat-energy/mobile@1x.png"
                 srcset="img/cat-energy/mobile@2x.png 2x"
                 alt="Cat energy website"
@@ -194,18 +222,24 @@
           </div>
           <div class="portfolio__item-description-wrapper">
             <p class="portfolio__item-description">
-              СДЕЛАТЬ 2Х ВСЕ ФОТКИ СДЕЛАТЬ ФОТКИ ВЕБПИ. ДАЛЬШЕ ДЕЛАТЬ ДИЗАЙН
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-              doloribus rem quibusdam ad, quidem ab est consequuntur assumenda
-              perferendis ipsum?
+              This website I made during obtaining certification in the HTML
+              Academy (Professional HTML & CSS, level 2) and process was close
+              to real world work.
             </p>
             <div class="btn-wrapper">
-              <a class="btn" href="#">Go to website</a>
-              <a class="btn" href="#">Github</a>
+              <a class="btn" href="https://cat-energy-shop.netlify.app/"
+                >Website</a
+              >
+              <a
+                class="btn"
+                href="https://github.com/SergeiKOS/204545-cat-energy-16"
+                >Github</a
+              >
             </div>
           </div>
         </article>
         <article class="portfolio__item portfolio__item--visualization">
+          <h3 class="visually-hidden">Data visualization app</h3>
           <div class="portfolio__item-image-wrapper">
             <picture>
               <source
@@ -247,6 +281,7 @@
                 "
               />
               <img
+                class="portfolio__item-image"
                 src="img/data-visualization/mobile@1x.png"
                 srcset="img/data-visualization/mobile@2x.png 2x"
                 alt="Data visualization app"
@@ -255,13 +290,18 @@
           </div>
           <div class="portfolio__item-description-wrapper">
             <p class="portfolio__item-description">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-              doloribus rem quibusdam ad, quidem ab est consequuntur assumenda
-              perferendis ipsum?
+              Small app to track measurements I made with using react-chartjs,
+              react-color, react-datepicker.
             </p>
             <div class="btn-wrapper">
-              <a class="btn" href="#">Go to website</a>
-              <a class="btn" href="#">Github</a>
+              <a class="btn" href="https://data-visualization-app.netlify.app/"
+                >Website</a
+              >
+              <a
+                class="btn"
+                href="https://bitbucket.org/SergeiKos/data-visualization-app/src/master/"
+                >Bitbucket</a
+              >
             </div>
           </div>
         </article>
@@ -271,24 +311,33 @@
     <section class="contact">
       <div class="contact__wrapper container">
         <h2>Contact</h2>
-        <form name="contact" method="POST" data-netlify="true">
-          <p>
-            <label>Your Name: <input type="text" name="name" /></label>
+        <form
+          class="contact__form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
+          <p class="contact__field-wrapper">
+            <label>Your Name: <input type="text" name="name" required /></label>
           </p>
-          <p>
-            <label>Your Email: <input type="email" name="email" /></label>
+          <p class="contact__field-wrapper">
+            <label
+              >Your Email: <input type="email" name="email" required
+            /></label>
           </p>
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
+          <p class="contact__field-wrapper contact__field-wrapper--textarea">
+            <label
+              >Message: <textarea name="message" required></textarea>
+            </label>
           </p>
-          <p>
-            <button type="submit">Send</button>
+          <p class="contact__field-wrapper">
+            <button class="contact__btn" type="submit">Send</button>
           </p>
         </form>
       </div>
     </section>
-    <footer class="page-footer container">
-      <ul class="nav-list">
+    <footer class="page-footer">
+      <ul class="nav-list container">
         <li class="nav-list__item">
           <a class="nav-list__item-link nav-list__item-link--about-me" href="#"
             >About me</a
