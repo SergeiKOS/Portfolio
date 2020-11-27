@@ -17,7 +17,6 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px;
-  /* overflow: overlay; */
 }
 
 *,
@@ -51,6 +50,7 @@ h6 {
 
 p {
   margin: 0;
+  text-align: justify;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -115,9 +115,6 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
 }
 
-/* main {
-  overflow: hidden;
-} */
 .page-header {
   height: 100%;
   min-height: 100vh;
@@ -179,6 +176,7 @@ input[type="radio"].visually-hidden {
 
 .slogan__description {
   font-size: 16px;
+  margin-top: 10px;
 }
 
 .arrow,
@@ -287,19 +285,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-bottom: 10px;
-  margin-bottom: 40px;
-}
-
-.portfolio__item--superbrain {
-  border-bottom: 5px solid var(--blue);
-}
-
-.portfolio__item--cat-energy {
-  border-bottom: 5px solid var(--green);
-}
-.portfolio__item--visualization {
-  border-bottom: 5px solid var(--reddish);
+  margin-bottom: 100px;
 }
 
 .portfolio__item-image-wrapper {
@@ -486,7 +472,7 @@ textarea:focus {
     width: 360px;
   }
 
-  .btn-wrapper .btn{
+  .btn-wrapper .btn {
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -523,6 +509,7 @@ textarea:focus {
 
   .portfolio__item-image {
     margin-right: 80px;
-    width: 700px;
+    width: 500px;
+    border: 1px solid var(--purple);
   }
 }
