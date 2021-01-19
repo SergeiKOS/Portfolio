@@ -289,10 +289,14 @@ h2 {
 }
 
 .portfolio__item-image-wrapper {
-  margin-right: 20px;
+  /* margin-right: 20px; */
   max-height: 483px;
   margin-bottom: 30px;
   overflow: hidden;
+}
+
+.portfolio__item-image-wrapper--digital-notes img {
+  width: 280px;
 }
 
 .portfolio__item-description-wrapper {
@@ -475,6 +479,10 @@ textarea:focus {
     width: 360px;
   }
 
+  .portfolio__item-image-wrapper--digital-notes img {
+    width: 360px;
+  }
+
   .btn-wrapper .btn {
     padding-left: 40px;
     padding-right: 40px;
@@ -514,5 +522,9 @@ textarea:focus {
     margin-right: 80px;
     width: 500px;
     border: 1px solid var(--purple);
+  }
+
+  .portfolio__item-image-wrapper--digital-notes img {
+    width: auto;
   }
 }
