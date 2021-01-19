@@ -58,8 +58,8 @@
             developer experience (as a hobby though) and I believe it's time for
             real work. I enjoy building apps for myself and will be happy to
             build yours within the company. When I am not coding you can still
-            find me at my desk surfing the internet. My certifications and CV are below. To see code and how it works
-            please go to
+            find me at my desk surfing the internet. My certifications and CV
+            are below. To see code and how it works please go to
             <a
               class="about__portfolio-link nav-list__item-link--portfolio"
               href="#"
@@ -88,7 +88,9 @@
               >
             </li>
             <li class="documents-list__item">
-              <a class="documents-list__link" href="https://assets.htmlacademy.ru/certificates/intensive/93/204545.pdf"
+              <a
+                class="documents-list__link"
+                href="https://assets.htmlacademy.ru/certificates/intensive/93/204545.pdf"
                 >Open JS certificate</a
               >
             </li>
@@ -121,7 +123,51 @@
     <section class="portfolio">
       <h2>Portfolio</h2>
       <div class="portfolio__wrapper container">
-        <article class="portfolio__item portfolio__item--superbrain">
+        <article class="portfolio__item">
+          <h3 class="visually-hidden">Digital notes app</h3>
+          <div class="portfolio__item-image-wrapper">
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  src/img/digital-notes/desktop@1x.webp 1x,
+                  src/img/digital-notes/desktop@2x.webp 2x
+                "
+              />
+
+              <source
+                type="image/webp"
+                srcset="
+                  src/img/digital-notes/mobile@1x.webp 1x,
+                  src/img/digital-notes/mobile@2x.webp 2x
+                "
+              />
+
+              <img
+                class="portfolio__item-image"
+                src="src/img/digital-notes/mobile@1x.jpg"
+                srcset="src/img/digital-notes/mobile@2x.jpg 2x"
+                alt="Digital notes app"
+              />
+            </picture>
+          </div>
+          <div class="portfolio__item-description-wrapper">
+            <p class="portfolio__item-description">
+              I like to store notes. But the app that I have used so far hasn't met my requirements. There are many small details for convenient using.
+              This project was implemented with react-quill.
+            </p>
+            <div class="btn-wrapper">
+              <a class="btn" href="https://your-digital-notes.netlify.app/"
+                >Website</a
+              >
+              <a class="btn" href="https://github.com/SergeiKOS/Digital-notes"
+                >Github</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="portfolio__item">
           <h3 class="visually-hidden">Superbrain app</h3>
           <div class="portfolio__item-image-wrapper">
             <picture>
@@ -172,15 +218,13 @@
             </p>
             <div class="btn-wrapper">
               <a class="btn" href="https://superbrain.netlify.app/">Website</a>
-              <a
-                class="btn"
-                href="https://github.com/SergeiKOS/SuperBrain"
+              <a class="btn" href="https://github.com/SergeiKOS/SuperBrain"
                 >Github</a
               >
             </div>
           </div>
         </article>
-        <article class="portfolio__item portfolio__item--cat-energy">
+        <article class="portfolio__item">
           <h3 class="visually-hidden">Cat energy website</h3>
           <div class="portfolio__item-image-wrapper">
             <picture>
@@ -251,7 +295,7 @@
             </div>
           </div>
         </article>
-        <article class="portfolio__item portfolio__item--visualization">
+        <article class="portfolio__item">
           <h3 class="visually-hidden">Data visualization app</h3>
           <div class="portfolio__item-image-wrapper">
             <picture>
@@ -281,7 +325,7 @@
                 class="portfolio__item-image"
                 src="src/img/data-visualization/mobile@1x.jpg"
                 srcset="src/img/data-visualization/mobile@2x.jpg 2x"
-                width='280'
+                width="280"
                 alt="Data visualization app"
               />
             </picture>
