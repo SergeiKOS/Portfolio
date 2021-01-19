@@ -290,6 +290,9 @@ h2 {
 
 .portfolio__item-image-wrapper {
   margin-right: 20px;
+  max-height: 483px;
+  margin-bottom: 30px;
+  overflow: hidden;
 }
 
 .portfolio__item-description-wrapper {
