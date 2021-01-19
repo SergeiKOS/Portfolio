@@ -288,6 +288,10 @@ h2 {
   margin-bottom: 100px;
 }
 
+.portfolio__item img {
+  width: 280px;
+}
+
 .portfolio__item-image-wrapper {
   max-height: 483px;
   margin-bottom: 30px;
@@ -296,9 +300,6 @@ h2 {
 
 .portfolio__item-image-wrapper--digital-notes {
   max-height: 383px;
-}
-.portfolio__item-image-wrapper--digital-notes img {
-  width: 280px;
 }
 
 .portfolio__item-description-wrapper {
@@ -481,12 +482,12 @@ textarea:focus {
     width: 360px;
   }
 
-  .portfolio__item-image-wrapper--digital-notes {
-    max-height: 300px;
+  .portfolio__item img {
+    width: 360px;
   }
 
-  .portfolio__item-image-wrapper--digital-notes img {
-    width: 360px;
+  .portfolio__item-image-wrapper--digital-notes {
+    max-height: 300px;
   }
 
   .btn-wrapper .btn {
@@ -530,7 +531,7 @@ textarea:focus {
     border: 1px solid var(--purple);
   }
 
-  .portfolio__item-image-wrapper--digital-notes img {
-    width: auto;
+  .portfolio__item img {
+    width: 500px;
   }
 }
