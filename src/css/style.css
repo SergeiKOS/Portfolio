@@ -1,12 +1,12 @@
 :root {
-  --green: #68b738;
+  --green: #a7ff70;
   --blue: #a0bfff;
   --reddish: #eb9694;
   --purple: #6e588c;
   --dark: #1a1226;
   --red: #cc0000;
   --bg-light-grey: #e5e8ec;
-  --main-font-family: "Nunito", sans-serif;
+  --main-font-family: 'Nunito', sans-serif;
   --fz-section-header: 36px;
   --fz-sub-header: 24px;
   --regular-font-weight: 400;
@@ -54,8 +54,8 @@ p {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -124,11 +124,11 @@ input[type="radio"].visually-hidden {
   background-size: cover;
   background-color: #000;
   background-repeat: no-repeat;
-  background-image: url("../img/global/header-bg-mobile@1x.jpg");
+  background-image: url('../img/global/header-bg-mobile@1x.jpg');
 }
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .page-header {
-    background-image: url("../img/global/header-bg-mobile@2x.jpg");
+    background-image: url('../img/global/header-bg-mobile@2x.jpg');
   }
 }
 
@@ -200,7 +200,7 @@ input[type="radio"].visually-hidden {
 }
 
 .arrow:before {
-  content: "";
+  content: '';
   width: 40px;
   height: 40px;
   top: 50%;
@@ -416,12 +416,12 @@ textarea:focus {
 
 @media (min-width: 768px) {
   .page-header {
-    background-image: url("../img/global/header-bg-tablet@1x.jpg");
+    background-image: url('../img/global/header-bg-tablet@1x.jpg');
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-header {
-      background-image: url("../img/global/header-bg-tablet@2x.jpg");
+      background-image: url('../img/global/header-bg-tablet@2x.jpg');
     }
   }
 
@@ -498,12 +498,12 @@ textarea:focus {
 
 @media (min-width: 1300px) {
   .page-header {
-    background-image: url("../img/global/header-bg-desktop@1x.jpg");
+    background-image: url('../img/global/header-bg-desktop@1x.jpg');
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-header {
-      background-image: url("../img/global/header-bg-desktop@2x.jpg");
+      background-image: url('../img/global/header-bg-desktop@2x.jpg');
     }
   }
 
