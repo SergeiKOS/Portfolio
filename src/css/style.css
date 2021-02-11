@@ -353,7 +353,7 @@ textarea {
   font-size: 22px;
   min-width: 280px;
   width: 100%;
-  color: #7dde42;
+  color: var(--green);
   margin-top: 10px;
   margin-bottom: 30px;
   display: block;
