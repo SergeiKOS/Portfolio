@@ -283,13 +283,14 @@ h2 {
 
 .portfolio__item {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
+  /* border: 1px solid #000; */
 }
 
 .portfolio__item img {
-  width: 280px;
 }
 
 .portfolio__item-image-wrapper {
@@ -478,12 +479,22 @@ textarea:focus {
     margin-left: 0;
   }
 
-  .portfolio__item-image {
-    width: 360px;
+  .portfolio__item {
+    justify-content: space-around;
+    margin-bottom: 100px;
   }
 
   .portfolio__item img {
-    width: 360px;
+    margin-top: -24px;
+  }
+
+  .digital-notes-logo {
+    display: block;
+    transform: translateY(20px);
+  }
+
+  .portfolio__item-image-wrapper--cat-energy {
+    transform: translateY(25px);
   }
 
   .portfolio__item-image-wrapper--digital-notes {
@@ -523,15 +534,6 @@ textarea:focus {
 
   .portfolio__item {
     justify-content: center;
-  }
-
-  .portfolio__item-image {
-    margin-right: 80px;
-    width: 500px;
-    border: 1px solid var(--purple);
-  }
-
-  .portfolio__item img {
-    width: 500px;
+    gap: 30px;
   }
 }
