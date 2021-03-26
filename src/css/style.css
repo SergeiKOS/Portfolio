@@ -123,6 +123,9 @@ input[type='radio'].visually-hidden {
 
 .documents-list__link {
   text-decoration: underline;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
 }
 .documents-list__link:hover {
   text-decoration: none;
@@ -267,6 +270,10 @@ h2 {
 
 .about__portfolio-link {
   text-decoration: underline;
+}
+
+.about__portfolio-link:hover {
+  text-decoration: none;
 }
 
 .about__photo {
