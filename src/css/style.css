@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/nunito-v16-latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/nunito-v16-latin-regular.woff') format('woff'),
+    url('../fonts/nunito-v16-latin-regular.ttf') format('truetype'),
+    url('../fonts/nunito-v16-latin-regular.svg#Nunito') format('svg');
+}
+
 :root {
   --green: #a7ff70;
   --blue: #a0bfff;
@@ -283,14 +295,14 @@ h2 {
 
 .portfolio__item {
   display: flex;
-  /* justify-content: space-between; */
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 40px;
-  /* border: 1px solid #000; */
 }
 
-.portfolio__item img {
+.portfolio__item h3 {
+  width: 100%;
+  text-align: center;
 }
 
 .portfolio__item-image-wrapper {
@@ -305,7 +317,6 @@ h2 {
 
 .portfolio__item-description-wrapper {
   width: 327px;
-  padding-bottom: 20px;
 }
 
 .portfolio__item-description {
@@ -481,7 +492,7 @@ textarea:focus {
 
   .portfolio__item {
     justify-content: space-around;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
   }
 
   .portfolio__item img {
