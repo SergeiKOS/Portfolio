@@ -364,6 +364,10 @@ h2 {
   width: 60%;
 }
 
+.contact__field-wrapper--btn {
+  width: 100%;
+}
+
 input,
 textarea {
   background-color: var(--purple);
@@ -405,6 +409,9 @@ textarea:focus {
   color: white;
   font-size: 18px;
   cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact__btn:hover,
